@@ -20,7 +20,7 @@ boolean show_img = true;
 boolean save_hpgl = false;
 String output_name = "output.txt";
 int scale_offset = 500; // offset to scaling factor: max(w,h) + offset will occupy the short side off the paper
-int longest_size = max(canvas_w, canvas_h) + scale_offset;
+int longest_side = max(canvas_w, canvas_h) + scale_offset;
 int plot_w = 500; // currently unused -- might be used for plotter coordinates
 int ploth = 500; // currently unused -- might be used for plotter coordinates
 int plot_offset_x = 0; // currently unused -- might be used for offsetting the output relative to a different starting point
@@ -184,7 +184,7 @@ void create_hpgl () {
   String init_txt = 
   "IN;" +
   //"IP" + canvas_w + "," + canvas_h + ";" + // plotter coordinates: IP P1 P2
-  "SC0," + longest_size + ",0," + longest_size / sqrt(2) + ";" + // user coordinates: SC U1 U2, where U1 maps to P1 and U2 to P2
+  "SC0," + longest_side + ",0," + longest_side / sqrt(2) + ";" + // user coordinates: SC U1 U2, where U1 maps to P1 and U2 to P2
   "SP1;";
   
   hpgl_writer = createWriter(sketchPath() + "\\" + output_name);
