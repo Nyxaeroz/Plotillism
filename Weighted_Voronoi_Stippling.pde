@@ -184,7 +184,7 @@ void create_hpgl () {
   String init_txt = 
   "IN;" +
   //"IP" + canvas_w + "," + canvas_h + ";" + // plotter coordinates: IP P1 P2
-  "SC0," + longest_side + ",0," + longest_side / sqrt(2) + ";" + // user coordinates: SC U1 U2, where U1 maps to P1 and U2 to P2
+  "SC0,-" + longest_side + ",0," + longest_side / sqrt(2) + ";" + // user coordinates: SC U1 U2, where U1 maps to P1 and U2 to P2
   "SP1;";
   
   hpgl_writer = createWriter(sketchPath() + "\\" + output_name);
