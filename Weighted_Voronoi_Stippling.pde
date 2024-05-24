@@ -39,7 +39,7 @@ void setup() {
   
   // load and show input
   input = loadImage(sketchPath() + "\\" + input_name);
-  image(input, 0, 0);
+    if (show_img) { image(input, 0, 0); }
   
   // initialize seeds and voronoi diagram
   generate_seeds();
@@ -68,6 +68,7 @@ void draw() {
     iter+=1;
   } else {
     noLoop();
+    background(200);
     if (show_img) { image(input, 0, 0); }
     show_seeds(color(255, 0, 0));
     if (save_hpgl) { create_hpgl(); }
