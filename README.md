@@ -35,4 +35,4 @@ Parameters for plotting:
 # Notes
 No notes at this very moment :)
 
-Find out more at [this wiki page](https://pzwiki.wdka.nl/mw-mediadesign/index.php?title=User:Thijshijsijsjss/Pen_Plotting_Panache/Plotillism&action=edit)
+Find out more at [this wiki page](https://pzwiki.wdka.nl/mediadesign/User:Thijshijsijsjss/Pen_Plotting_Panache/Plotillism)
